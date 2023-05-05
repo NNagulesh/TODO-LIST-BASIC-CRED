@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+     <link rel="stylesheet" href ="design.css"> 
+</head>
+<body>
+   
+
+<header>
+    
+        <h1 style="text-align:center;margin-top:1rem;margin-bottom:0.5em;" >TODO LIST</h1>
+        
+        <form id="new-task-form">
+            <input
+               type="date"
+               name="dateInput"
+               id="dateInput"
+               />
+            <input 
+               type="text"
+               name="new-task-input"
+               autocomplete="off"
+               id="new-task-input"
+               placeholder="Enter your task" />
+              
+            <input
+                type="submit"
+                id="new-task-submit"
+                value="Add task"/>        
+        </form>
+</header>
+             
+<main>
+    <section class="task-list" >
+        <div class="task_select">
+            <h2>TASKS</h2>
+        <select id="select1" value="TODAY" onchange="filter(this)">
+            <option value="ALL" >ALL
+            <option value="TODAY">TODAY
+        </select>
+        
+        </div>
+        <div id="tasks">
+
+     
+        </div>
+    </section>
+</main>  
+    
+<script src="list.js"></script>
+
+</body>
+</html>
