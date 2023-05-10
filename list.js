@@ -46,13 +46,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         task_content_el.appendChild(task_input_el);
 
-        // const task_input_el = document.createElement('input');
-        // task_input_el.classList.add('text');
-        // task_input_el.type = 'text';
-        // task_input_el.value = el.todo;
-        // task_input_el.setAttribute('readonly', 'readonly');
-
-        // task_content_el.appendChild(task_input_el);
+       
 
         const task_actions_el = document.createElement('div');
         task_actions_el.classList.add('actions');
@@ -64,9 +58,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         date_el.id = ''
         task_content_el.appendChild(date_el);
 
-        // const task_edit_el = document.createElement('button');
-        // task_edit_el.classList.add('edit');
-        // task_edit_el.innerText = 'edit';
 
         const task_complete_el = document.createElement('button');
         task_complete_el.classList.add('complete');
@@ -76,20 +67,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         task_delete_el.classList.add('delete');
         task_delete_el.innerText = 'Delete';
 
-        // task_edit_el.addEventListener('click', (e) => {
-        //     if (task_edit_el.innerText.toLowerCase() == "edit") {
-        //         task_edit_el.innerText = "Save";
-
-        //         task_input_el.removeAttribute("readonly");
-        //         task_input_el.focus();
-        //     } else {
-        //         task_edit_el.innerText = "Edit";
-        //         task_input_el.setAttribute("readonly", "readonly");
-        //     }
-        //     saveToLocalStorage()
-        // });
-
-        // task_actions_el.appendChild(task_edit_el);
+       
         task_actions_el.appendChild(task_delete_el);
         task_actions_el.appendChild(task_complete_el);
 
@@ -103,7 +81,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
             task_complete_el.classList.add("strike")
 
             el.shouldStrike = true
-            // task_input_el.style.textDecoration = 'line-through';
             task_complete_el.innerText = "Completed"
             saveToLocalStorage()
         })
@@ -155,18 +132,10 @@ function display() {
             list_el.appendChild(task_el);
             task_el.appendChild(task_content_el);
 
-            // const task_input_el = document.createElement('input');
-            // task_input_el.classList.add('text');
-            // task_input_el.type = 'text';
-            // task_input_el.value = el.todo;
-            // task_input_el.innerHTML = el.todo;
-            // task_input_el.setAttribute('readonly', 'readonly');
-
-            // task_content_el.appendChild(task_input_el);
+           
 
             const task_input_el = document.createElement('div');
-            // const input_el = document.createElement("input")
-            // input_el.value = el.todo
+            
             task_input_el.appendChild(input_el)
             task_input_el.classList.add('text');
             task_input_el.type = 'text';
@@ -188,10 +157,7 @@ function display() {
             date_el.id = ''
             task_content_el.appendChild(date_el);
 
-            // const task_edit_el = document.createElement('button');
-            // task_edit_el.classList.add('edit');
-            // task_edit_el.innerText = 'edit';
-
+          
             const task_complete_el = document.createElement('button');
             task_complete_el.classList.add('complete');
             task_complete_el.innerText = el.shouldStrike ? "Completed" : "complete";
@@ -202,21 +168,7 @@ function display() {
 
 
 
-            // task_edit_el.addEventListener('click', (e) => {
-            //     if (task_edit_el.innerText.toLowerCase() == "edit") {
-            //         task_edit_el.innerText = "Save";
-
-            //         task_input_el.removeAttribute("readonly");
-            //         task_input_el.focus();
-            //     } else {
-            //         task_edit_el.innerText = "Edit";
-            //         task_input_el.setAttribute("readonly", "readonly");
-            //     }
-            //     saveToLocalStorage()
-            // });
-
-
-            // task_actions_el.appendChild(task_edit_el);
+           
             task_actions_el.appendChild(task_delete_el);
             task_actions_el.appendChild(task_complete_el);
 
@@ -230,7 +182,7 @@ function display() {
             task_complete_el.addEventListener('click', (e) => {
                 el.shouldStrike = true
                 task_input_el.classList.add("strike")
-                // task_input_el.style.textDecoration = 'line-through';
+
                 task_complete_el.innerText = "Completed"
                 saveToLocalStorage()
             })
@@ -286,10 +238,6 @@ function display() {
             date_el.id = ''
             task_content_el.appendChild(date_el);
 
-            // const task_edit_el = document.createElement('button');
-            // task_edit_el.classList.add('edit');
-            // task_edit_el.innerText = 'edit';
-
             const task_delete_el = document.createElement('button');
             task_delete_el.classList.add('delete');
             task_delete_el.innerText = 'Delete';
@@ -299,19 +247,7 @@ function display() {
             task_complete_el.innerText = el.shouldStrike ? "Completed" : "complete";
 
 
-            // task_edit_el.addEventListener('click', (e) => {
-            //     if (task_edit_el.innerText.toLowerCase() == "edit") {
-            //         input_el.innerText = "Save";
-
-            //         input_el.removeAttribute("readonly");
-            //         input_el.focus();
-            //     } else {
-            //         input_el.innerText = "Edit";
-            //         input_el.setAttribute("readonly", "readonly");
-            //     }
-            //     saveToLocalStorage()
-            // });
-            // task_actions_el.appendChild(task_edit_el);
+           
             task_actions_el.appendChild(task_delete_el);
             task_actions_el.appendChild(task_complete_el);
 
@@ -326,7 +262,7 @@ function display() {
                 el.shouldStrike = true
                 task_input_el.classList.add("strike")
 
-                // task_input_el.style.textDecoration = 'line-through'
+               
                 task_complete_el.innerText = "Completed"
                 saveToLocalStorage()
 
