@@ -156,6 +156,10 @@ select{
 	-webkit-text-fill-color: transparent;
 }
 
+.strike{
+	text-decoration: line-through;
+}
+
 .task .actions .complete {
 	background-image: linear-gradient(to right, var(--pink), var(--purple));
 	-webkit-background-clip: text;
