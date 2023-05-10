@@ -156,6 +156,12 @@ select{
 	-webkit-text-fill-color: transparent;
 }
 
+.task .actions .complete {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .task .actions .delete {
 	color: rgb(243, 0, 50);
 }
