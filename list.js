@@ -135,7 +135,8 @@ function display() {
            
 
             const task_input_el = document.createElement('div');
-            
+            const input_el = document.createElement("input")
+            input_el.value = el.todo
             task_input_el.appendChild(input_el)
             task_input_el.classList.add('text');
             task_input_el.type = 'text';
